@@ -292,7 +292,7 @@ body::after {
     background-color: #ffffff; /* Đặt nền trắng để dễ đọc chữ đen */
 }
 
-#name, #email, #phone {
+#name, #email, #phone, #cccd,#people {
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -374,7 +374,9 @@ body::after {
 #name,
 #email,
 #phone,
-#message {
+#message,
+#cccd,
+#people {
     border: 0.5px solid #ffffff; /* Thêm border màu trắng */
 }
  
@@ -384,7 +386,7 @@ body::after {
 #name,
 #email,
 #phone,
-#message {
+#message, #cccd, #people {
     margin-bottom: 9px;
 }
 
@@ -412,12 +414,14 @@ form[name="contactform"].hidden {
 #name:focus,
 #email:focus,
 #message:focus,
-#phone:focus {
+#phone:focus,
+#cccd:focus 
+#people:focus{
     border-color: #CA8E46; /* Màu border khi focus */
     outline: none; /* Loại bỏ đường viền khi focus */
 }
 
-#name, #email, #message, #phone  {
+#name, #email, #message, #phone, #cccd, #people  {
     border: 1px solid #fff; /* Border màu trắng mặc định */
     transition: border-color 0.3s ease; /* Hiệu ứng transition */
     padding: 10px;
